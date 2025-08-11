@@ -1,0 +1,6 @@
+ruleDirs:
+- C:\Users\Charles\source\repos\arctic_tern\0_15-0_16\rules
+testConfigs:
+- testDir: C:\Users\Charles\source\repos\arctic_tern\0_15-0_16\rule-tests
+utilDirs:
+- C:\Users\Charles\source\repos\arctic_tern\0_15-0_16\utils

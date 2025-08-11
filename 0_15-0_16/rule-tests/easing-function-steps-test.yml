@@ -1,0 +1,5 @@
+id: easing-function-steps
+valid:
+- "let ease_function = EaseFunction::Steps(10, JumpAt::default());"
+invalid:
+- "let ease_function = EaseFunction::Steps(10);"
