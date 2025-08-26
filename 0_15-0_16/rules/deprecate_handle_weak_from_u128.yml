@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json
+
+id: deprecate_handle_weak_from_u128
+language: Rust
+rule:
+  pattern: Handle::weak_from_u128($INT)
+fix: weak_handle!("$INT")
+

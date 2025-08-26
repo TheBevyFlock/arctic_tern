@@ -1,0 +1,12 @@
+id: mutable_audio_sink
+valid:
+- |
+  fn increase_volume(mut sink: Single<&mut AudioSink, With<Music>>) {
+    let current_volume = sink.volume();
+    sink.set_volume(current_volume + 0.1);
+  }
+invalid:
+- |
+  fn increase_volume(sink: Single<&AudioSink, With<Music>>) {
+    sink.set_volume(sink.volume() + 0.1);
+  }
