@@ -1,0 +1,9 @@
+id: easing-function-steps
+snapshots:
+  let ease_function = EaseFunction::Steps(10);:
+    fixed: let ease_function = EaseFunction::Steps(10, JumpAt::default());
+    labels:
+    - source: EaseFunction::Steps(10)
+      style: primary
+      start: 20
+      end: 43

@@ -1,0 +1,5 @@
+id: deprecate_handle_weak_from_u128
+valid:
+- "const SHADER: Handle<Shader> = weak_handle!(\"1347c9b7-c46a-48e7-b7b8-023a354b7cac\");"
+invalid:
+- "const SHADER: Handle<Shader> = Handle::weak_from_u128(314685653797097581405914117016993910609);"

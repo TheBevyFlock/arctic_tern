@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json
+
+id: mutable_audio_sink
+language: Rust
+rule:
+  pattern: "$SINK: Single<&AudioSink, $FILTER>"
+  fix: "mut $SINK: Single<&mut AudioSink, $FILTER>"
+  pattern: "$SINK: Single<&AudioSink>"
+  fix: "mut $SINK: Single<&mut AudioSink>"
+
